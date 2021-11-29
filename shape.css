@@ -1,0 +1,334 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 10px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav .icon {
+  display: none;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 67%;
+  padding-right: 10px;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 33%;
+  background-color: #f1f1f1;
+  padding-left: 10px;
+}
+
+.leftcolumn2 {   
+  float: left;
+  width: 30%;
+  padding-right: 10px;
+}
+
+/* Right column */
+.rightcolumn2 {
+  float: left;
+  width: 70%;
+  background-color: #f1f1f1;
+  padding-left: 10px;
+}
+
+.leftcolumn3 {   
+  float: left;
+  width: 33%;
+  padding-right: 10px;
+}
+
+/* Right column */
+.rightcolumn3 {
+  float: left;
+  width: 67%;
+  background-color: #f1f1f1;
+  padding-left: 10px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 10px;
+  overflow: auto;
+}
+
+.card2 {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.card3 {
+	background-color: white;
+	padding: 20px;
+	margin-top: 20px;
+	overflow: hidden;
+	height: 400px;
+}
+
+.card4 {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  
+}
+
+.clearfix2 {
+  overflow: auto;
+}
+.smallcolumn {
+	float: left;
+	width: 40%;
+	padding-right: 5px;
+	padding-left: 12px;
+}
+
+.smallcolumn2 {
+	float:left;
+	width: 20%;
+	padding-right: 5px;
+	padding-left: 12px;
+}
+.smallcolumn3 {
+	float: left;
+	width: 30%;
+	padding-right: 5px;
+	padding-left: 12px;
+}
+
+.row-centered {
+	text-align:center;
+	margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+	padding-top: 10px;
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+	z-index: 2;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+z-index: 2;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 10px 15px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+  overflow: auto;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+   .rightcolumn, .leftcolumn, .smallcolumn, .smallcolumn2, .leftcolumn2, .rightcolumn2, .leftcolumn3, .rightcolumn3 {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.img1 {
+  float: left;
+padding-bottom: 10px;
+}
+
+li:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}

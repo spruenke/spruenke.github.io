@@ -1,0 +1,67 @@
+\documentclass[11pt]{article}
+
+%%% Nützliche Pakete 
+%%%
+
+\usepackage{amsmath, tabu}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{bbm}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage[titles]{tocloft}
+%%% Für Sprache, Deutsch geht natürlich auch! %%%
+
+\usepackage[english]{babel}
+
+%%%%
+
+\title{Hausaufgaben ...} %%% für ... das Fach einfügen
+%%% Hier Autoren einfügen
+\author{Autor 1, Autor 2}
+
+\titleformat{\section}{\centering\normalfont\large\bfseries}{Blatt \thesection}{1em}{}
+
+\renewcommand{\cftsecpresnum}{Blatt\space}
+\newlength\mylength
+\settowidth\mylength{\cftsecpresnum}
+\addtolength\cftsecnumwidth{\mylength}
+
+\titleformat{\subsection}{\normalfont\bfseries}{Aufgabe \thesubsection}{1em}{}
+
+\renewcommand{\cftsubsecpresnum}{Aufgabe\space}
+\settowidth\mylength{\cftsubsecpresnum}
+\addtolength\cftsubsecnumwidth{\mylength}
+
+%%% Einfügen der selbsterstellten Commands
+%%%
+%%%
+
+
+\begin{document}
+\maketitle
+\clearpage
+\tableofcontents
+\clearpage
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Autor 1, Autor 2}
+\rhead{\today}
+
+%%%% Section ist für das Blatt
+%%%%    Subsection für die Aufgabe auf dem Blatt
+%%%%		Enumerate für a, b, c etc. einer Aufgabe
+\section{}
+
+		\subsection{}
+			\begin{enumerate}[(a)]
+				\item 
+			\end{enumerate}
+\end{document}

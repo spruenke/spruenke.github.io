@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="script.js">
+</script>
+<meta charset="UTF-8">
+<title> Programming </title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="shape.css" rel="stylesheet" type="text/css">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+
+<div class="topnav", id="myTopnav">
+	<a href="index.html">Home</a> 
+	<a href="codes.html">Programming</a> 
+	<a href="research.html">Research</a>
+	<a href="teaching.html">Current Teaching</a>
+	<a href="teaching_past.html">Past Teaching</a>
+	<a href="about.html">About Me</a>
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    		<i class="fa fa-bars"></i>
+  	</a>
+</div>
+
+<div class="row">
+	<div class="leftcolumn3">
+		<div class="card">
+			<div class="clearfix">
+				<a href="https://rstudio.com/"><img class="img1" src="rstudio-logo.png" alt="RStudio Logo" width=100%></a>
+			</div>
+			All available codes are written in R. For usage one needs at least <a href="https://www.r-project.org/">R</a>, however <a href="https://rstudio.com/">RStudio</a> is recommended as IDE. Both are Open Source. If codes are used for academic purposes I require citation of this website and my name. I do not take responsibility for my codes.
+		</div>
+		<div class="card">
+			<h2> Overview </h2>
+			<ul>
+				<li> <a href="#oneT"> One Sample t-Test Simulation </a></li>
+				<li> <a href="#twoT"> Welch-Test Simulation </a></li>
+				<li> <a href="#MPT"> MPT-Asset-Allocation </a></li>
+				<li> <a href="#param"> Estimation of Asset Returns </a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="rightcolumn3">
+		<div class="card">
+			<h2><a name="oneT"> One Sample t-Test Simulation </a></h2>
+			<p> This function uses resampling techniques to simulate the one sample t-test. Specifically, non-parametric, parametric and wild bootstrap are used. The code contains a function which takes 5 arguments: </p>
+			<ul>
+				<li> x: The data vector to be tested (sample) </li>
+				<li> mu.t: The target mean (under null hypothesis) (by default 0) </li>
+				<li> nboot: The number of bootstrapping simulations (by default 4000) </li>
+				<li> alpha: The significance level (by default 0.05)</li>
+				<li> direction: A character string specifying the direction of the test. By default this is equal, testing the null that the sample mean and target mean are equal. Other possible arguments are "greater" ("lower") which tests the hypothesis that the sample mean is significantly above (below) the target mean. </li>
+			</ul>
+			<p> <a href="codes/t.R" download target="_blank">t-Test <img src="r-logo.jpg" alt="R file icon" width = 2%></a> </p>
+		</div>
+		<div class="card">
+			<h2><a name="twoT"> Welch-Test Simulation </a></h2>
+			<p> This function uses resampling techniques to simulate the two sample Welch-corrected t-test. Specifically, permutation, non-parametric, parametric and wild bootstrap are used. The null hypothesis is that the two sample means are equal. The code contains a function which takes 4 arguments: </p>
+			<ul>
+				<li> x.1, x.2: The data vectors to be tested against each other (sample) </li>
+				<li> nboot: The number of bootstrapping simulations (by default 1000) </li>
+				<li> alpha: The significance level (by default 0.05)</li>
+			</ul>
+			<p> <a href="codes/welch.R" download target="_blank">Welch-Test <img src="r-logo.jpg" alt="R file icon" width = 2%></a> </p>
+		</div>
+		<div class="card">
+			<h2><a name="MPT"> MPT-Asset-Allocation </a></h2>
+			<p> This function optimizes asset allocation in the sense of Modern Portfolio Theory. Namely, the constrained mean-variance portfolio (minimize variance with respect to target return), the global minimum variance portfolio and the maximization of the Sharpe Ratio. This function assumes a risk-free rate of zero. The code contains a function which takes 7 arguments: </p>
+			<ul>
+				<li> mu: The expected returns of the assets (typically sample based) </li>
+				<li> sigma: The expected variance-covariance matrix of the assets (typically sample based) </li>
+				<li> gamma: The investor's risk aversion (default is set to 1) </li>
+				<li> method: Specifies the optimization method, i.e.: Constrained Minimum Variance ("cmv" - is default), Global Minimum Variance ("gmv") or Sharpe Ratio Maximization ("sr")</li>
+				<li> mu.p: The target return (only necessary for the Constrained Miniumum Variance - default is NULL)</li>
+				<li> wealth: Current portfolio value or wealth to invest into the stocks </li>
+				<li> prices: Current prices of the stocks used </li>
+			</ul>
+			<p> <a href="codes/mv.R" download target="_blank">Mean-Variance Optimization <img src="r-logo.jpg" alt="R file icon" width = 2%></a> </p>
+		</div>
+		<div class="card">
+			<h2><a name="param"> Estimation of Asset Returns </a></h2>
+			<p> This function estimates asset returns based on the sample using different methods. It takes 4 arguments:</p>
+			<ul>
+				<li> x: The data matrix (sample). Needs dimension T x N, where T is the number of total Observations (dates) and N the number of assets </li>
+				<li> M: The window size on which the estimation takes place (by default 60) </li>
+				<li> lam: Mathematical Parameter for Bayes-Stein-Shrinkage (default is 1) </li>
+				<li> method: String specifying whether arithmetic mean ("ar"), geometric mean ("gr") or Bayes-Stein-Shrinkage ("bs") is used</li>
+			</ul>
+			<p> <a href="codes/par_est.R" download target="_blank">Sample-based Parameter Estimation <img src="r-logo.jpg" alt="R file icon" width = 2%></a> </p>
+		</div>
+	</div>
+</div>
+</body>
+</html>
