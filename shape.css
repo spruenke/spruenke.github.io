@@ -72,6 +72,25 @@ body {
   padding-right: 10px;
 }
 
+.midcolumn {
+  float: left;
+  width: 55%;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.rightcolumn4 {
+  float: left;
+  width: 25%;
+  padding-left: 10px;
+}
+
+.leftcolumn4 {
+  float: left;
+  width: 20%;
+  padding-right: 10px;
+}
+
 /* Right column */
 .rightcolumn {
   float: left;
