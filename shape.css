@@ -5,7 +5,7 @@
 body {
   font-family: Arial;
   padding: 10px;
-  background: #f1f1f1;
+  background: #f1f1f1; 
 }
 
 /* Header/Blog Title */
@@ -376,28 +376,33 @@ li:not(:last-child) {
 }
 
 .collapsible {
-  background-color: #777;
-  color: white;
+  background-color: white; /* #777;
+  color: white; */
   cursor: pointer;
-  padding: 18px;
+  padding: 10px;
   width: 100%;
-  border: none;
+  border-style: none none dotted none;
   text-align: left;
   outline: none;
   font-size: 17px;
   font-weight: 700;
-  border-radius: 12px;
+  border-radius: 12px 12px 0 0;
+  /* border-radius: 12px; */
   transition-duration: 0.4s;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
+/* .active, .collapsible:hover {
   background-color: #555;
+} */
+
+.active, .collapsible:hover {
+  background-color: #f1f1f1;
 }
 
 .collapsible:after {
   content: '\002B';
-  color: white;
+  color: black;
   font-weight: bold;
   float: right;
   margin-left: 5px;
@@ -415,7 +420,8 @@ li:not(:last-child) {
   overflow: hidden;
   background-color: #f1f1f1;
   transition: max-height 0.4s ease-out;
-  border-radius: 12px;
+  border-radius: 0 0 12px 12px;
+  /* border-radius: 12px; */
   margin-bottom: 8px;
 
 }
