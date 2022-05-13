@@ -68,6 +68,7 @@ h2 {
   background-color: #ddd;
   color: black;
 }
+
 .topnav .icon {
   display: none;
 }
@@ -401,15 +402,16 @@ li:not(:last-child) {
 }
 
 .collapsible:after {
-  content: '\002B';
+  content: "\f103"; /* '\002B'; */
   color: black;
   font-weight: bold;
+  font-family: "Font Awesome 6 Free";
   float: right;
   margin-left: 5px;
 }
 
 .active:after {
-  content: "\2212";
+  content: "\f102"; /* "\2212"; */
 }
 
 .content_s {
