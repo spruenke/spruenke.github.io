@@ -554,7 +554,7 @@ li:not(:last-child) {
 }
 
 
-.topBtn {
+#topBtn {
   display: none;
   position: fixed;
   bottom: 20px;
@@ -570,6 +570,6 @@ li:not(:last-child) {
   border-radius: 4px;
 }
 
-.topBtn:hover {
+#topBtn:hover {
   background-color: #555;
 }
