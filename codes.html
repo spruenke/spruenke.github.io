@@ -33,16 +33,14 @@
 		</div>
 		<div class="card">
 			<h2> Overview </h2>
-			<ul>
-				<li> <a href="#nboot"> nBoot package (alpha) </a></li>
-				<li> <a href="#rankCluster"> rankCluster package (alpha / pre-release) </a></li>
-				<li> <a href="#StatTex"> StatTex </a></li>
-			</ul>
+			<button type="button" class="button_sub" onclick="document.getElementById('nBoot').scrollIntoView();">nBoot Package (alpha)</button>
+			<button type="button" class="button_sub" onclick="document.getElementById('rankCluster').scrollIntoView();">rankCluster package (alpha / pre-release)</button>
+			<button type="button" class="button_sub" onclick="document.getElementById('StatTex').scrollIntoView();">StatTeX</button>
 		</div>
 	</div>
 
 	<div class="rightcolumn3">
-		<div class="card">
+		<div class="card" id="nboot">
 			<h2><a name="nboot"> Package for resampling (alpha version) </a></h2>
 			<p> The package provides convenient wrappers for resampled versions of test procedures and regression techniques. </p>
 			<ul>
@@ -53,7 +51,7 @@
 			</ul>
 			<button type="button" class="button_pdf" onclick="window.open('https://spruenke.github.io/nboot/', __blank')"><i class="fas fa-server"></i> nBoot</button>
 		</div>
-				<div class="card">
+			<div class="card", id="rankCluster">
 			<h2><a name="rankCluster"> Package for nonparametric hypothesis testing on cluster data (alpha version / pre-release) </a></h2>
 			<p> The package provides several utilities and functions to compute hypothesis tests on cluster data in the several sample case.  </p>
 			<ul>
@@ -66,7 +64,7 @@
 			</ul>
 			<button type="button" class="button_pdf" onclick="window.open('https://github.com/spruenke/rankCluster', __blank')"><i class="fas fa-server"></i> rankCluster</button>
 		</div>
-						<div class="card">
+			<div class="card" id="StatTex">
 			<h2><a name="StatTex"> LaTeX-package and templates </a></h2>
 			<p> The package provides several templates for title pages (thesis and working papers), a template for exercise sheets and a package (.sty) providing environments and many useful commands for statistics and stochastics. </p>
 			<ul>
