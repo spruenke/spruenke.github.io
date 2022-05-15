@@ -3,9 +3,10 @@
 }
 
 body {
-  font-family: Arial;
+  font-family: Abel;
   padding: 10px;
-  background: #f1f1f1; 
+  background: #f1f1f1;
+  font-size: 18px;
 }
 
 /* Header/Blog Title */
@@ -83,7 +84,7 @@ h2 {
 
 .midcolumn {
   float: left;
-  width: 55%;
+  width: 60%; 
   padding-right: 10px;
   padding-left: 10px;
 }
@@ -94,9 +95,24 @@ h2 {
   padding-left: 10px;
 }
 
+.imgcenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-height: 300px;
+  max-width: 300px;
+}
+
+.leftcolumn75 {
+  float: left;
+  width: 75%;
+  padding-left: 10px;
+}
+
 .leftcolumn4 {
   float: left;
-  width: 20%;
+  width: 25%;/* 20%; */
   padding-right: 10px;
 }
 
@@ -126,13 +142,21 @@ h2 {
   float: left;
   width: 33%;
   padding-right: 10px;
+  margin: auto;
+}
+
+.column34 {
+  float: left;
+  width: 34%;
+  padding-right: 10px;
+  margin:auto;
 }
 
 /* Right column */
 .rightcolumn3 {
   float: left;
   width: 67%;
-  background-color: #f1f1f1;
+  /* background-color: #f1f1f1; */
   padding-left: 10px;
 }
 
@@ -324,7 +348,7 @@ z-index: 2;
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
-   .rightcolumn, .leftcolumn, .smallcolumn, .smallcolumn2, .leftcolumn2, .rightcolumn2, .leftcolumn3, .rightcolumn3 {   
+   .rightcolumn, .leftcolumn, .smallcolumn, .smallcolumn2, .smallcolumn3, .leftcolumn2, .rightcolumn2, .leftcolumn3, .rightcolumn3, .leftcolumn4, .rightcolumn4, .midcolumn {   
     width: 100%;
     padding: 0;
   }
@@ -389,7 +413,7 @@ li:not(:last-child) {
   font-weight: 700;
   border-radius: 12px 12px 0 0;
   /* border-radius: 12px; */
-  transition-duration: 0.4s;
+  transition-duration: 0.2s;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -429,20 +453,20 @@ li:not(:last-child) {
 }
 
 .button_pdf {
-  background-color: #D3D3D3;
-  color: white
-  border: 2px solid #D3D3D3;
+  background-color: #e0e0e0;
+  color: black;
+  border: 2px solid #e0e0e0;
   padding: 8px 16px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 2px, 2px;
+  margin: 2px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
   border-radius: 15px;
   font-weight: 700;
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .button_pdf:hover {
@@ -450,3 +474,50 @@ li:not(:last-child) {
   color: black;
   opacity: 1.0;
 }
+
+.button_social {
+  background-color: white;
+  color: black;
+  border: 2px solid transparent;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 15px;
+  font-weight: 700;
+  opacity: 1;
+}
+
+.button_social:hover {
+  background-color: #e0e0e0;
+  color: black;
+  opacity: 1;
+}
+
+.button_sub {
+  background-color: white;
+  color: black;
+  border: 2px solid transparent;
+  padding: 6px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin: 2px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 15px;
+  font-weight: normal;
+  opacity: 1;
+}
+
+.button_sub:hover {
+  background-color: #e0e0e0;
+  color: black;
+  opacity: 1;
+}
+
