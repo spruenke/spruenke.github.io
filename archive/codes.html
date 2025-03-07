@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+<script src="script.js">
+</script>
+<meta charset="UTF-8">
+<title> Software </title>
+<script src="https://kit.fontawesome.com/d8471ffc30.js" crossorigin="anonymous"></script>
+<link href="shape.css" rel="stylesheet" type="text/css">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+
+<div class="topnav", id="myTopnav">
+	<a href="index.html"> <i class="fas fa-home"></i>  Home</a> 
+	<a href="codes.html"><i class="fas fa-desktop"></i>  Software</a> 
+	<a href="research.html"><i class='fas fa-microscope'></i>  Research</a>
+	<a href="teaching.html"><i class="fas fa-graduation-cap"></i>  Teaching</a>
+	<a href="talks.html"><i class="fa-solid fa-person-chalkboard"></i> Talks</a>
+	<a href="about.html"><i class="fas fa-user-alt"></i>  About Me</a>
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    		<i class="fas fa-bars"></i>
+  	</a>
+</div>
+
+<div class="row">
+	<div class="leftcolumn3">
+		<div class="card">
+			<div class="clearfix">
+				<a href="https://rstudio.com/"><img class="img1" src="rstudio-logo.png" alt="RStudio Logo" width=100%></a>
+			</div>
+			All available codes are written in R or R-related C/C++. For usage one needs at least <a href="https://www.r-project.org/">R</a>, however <a href="https://rstudio.com/">RStudio</a> is recommended as IDE. Both are Open Source.
+		</div>
+		<div class="card">
+			<h2> Overview </h2>
+			<button type="button" class="button_sub" onclick="document.getElementById('nBoot').scrollIntoView();">nBoot Package (alpha)</button>
+			<button type="button" class="button_sub" onclick="document.getElementById('rankCluster').scrollIntoView();">rankCluster package (alpha / pre-release)</button>
+			<button type="button" class="button_sub" onclick="document.getElementById('StatTex').scrollIntoView();">StatTeX</button>
+		</div>
+	</div>
+
+	<div class="rightcolumn3">
+		<!-- <div class="card" id="nboot">
+			<h2><a name="nboot"> Package for resampling (alpha version) </a></h2>
+			<p> The package provides convenient wrappers for resampled versions of test procedures and regression techniques. </p>
+			<ul>
+				<li> Linear Regression </li>
+				<li> t-Test </li>
+				<li> Mann-Whitney-U-Test </li>
+				<li> Sample Estimators </li>
+			</ul>
+			<button type="button" class="button_pdf" onclick="window.open('https://spruenke.github.io/nboot/', '_blank')"><i class="fas fa-server"></i> nBoot</button>
+		</div> -->
+			<div class="card", id="rankCluster">
+			<h2><a name="rankCluster"> Package for nonparametric hypothesis testing on cluster data (alpha version / pre-release) </a></h2>
+			<p> The package provides several utilities and functions to compute hypothesis tests on cluster data in the several sample case.  </p>
+			<ul>
+				<li> Wald-test </li>
+				<li> ANOVA-type test </li>
+				<li> Multiple Contrast Test Procedure </li>
+				<li> Distribution Functions </li>
+				<li> Nonparametric Relative Effects</li>
+				<li> Covariance-Matrix of Relative Effects</li>
+			</ul>
+			<button type="button" class="button_pdf" onclick="window.open('https://github.com/spruenke/rankCluster', '_blank')"><i class="fas fa-server"></i> rankCluster</button>
+		</div>
+			<div class="card" id="StatTex">
+			<h2><a name="StatTex"> LaTeX-package and templates </a></h2>
+			<p> The package provides several templates for title pages (thesis and working papers), a template for exercise sheets and a package (.sty) providing environments and many useful commands for statistics and stochastics. </p>
+			<ul>
+				<li> Environments for lemma, theorem, definition </li>
+				<li> Commands for Calculus, Linear Algebra, Stochastics, Statistics </li>
+				<li> Title page for Bachelor/Master thesis </li>
+				<li> Title page for working papers </li>
+				<li> Template for Exercise sheets </li>
+			</ul>
+			<button type="button" class="button_pdf" onclick="window.open('https://github.com/spruenke/StatTeX', '_blank')"><i class="fas fa-server"></i> StatTeX</button>
+		</div>
+
+</div>
+</body>
+</html>
