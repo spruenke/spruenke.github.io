@@ -191,6 +191,14 @@ a:hover {
   display: none;
 }
 
+@media screen and (max-width: 600px) {
+  .topnav .icon {
+    display: block !important;
+    margin-left: auto;
+    float: none;
+  }
+}
+
 .topnav a.active-page {
   background-color: #555;
   box-shadow: inset 0 -3px 0 #6a8f72; /* green underline shadow matching your highlight color */
@@ -589,10 +597,16 @@ a:hover {
   .leftcolumn, .rightcolumn,
   .leftcolumn2, .rightcolumn2,
   .leftcolumn3, .rightcolumn3, .centercolumn3,
+  .leftcolumn4, .centercolumn4,
   .leftcolumn_pub, .halfcolumn,
   .smallcolumn, .smallcolumn2, .smallcolumn3 {
     width: 100%;
     padding: 0;
+    flex: unset;
+  }
+
+  .row {
+    flex-direction: column;
   }
 
   .social-split {
@@ -609,18 +623,11 @@ a:hover {
 @media screen and (max-width: 600px) {
   .topnav {
     flex-wrap: nowrap;
-    justify-content: space-between;
     align-items: center;
   }
 
   .topnav a:not(:first-child):not(.icon) {
     display: none;
-  }
-
-  .topnav a.icon {
-    display: block;
-    float: none;
-    margin-left: auto;
   }
 
   .topnav.responsive {
@@ -635,7 +642,7 @@ a:hover {
     top: 0;
   }
 
-  .topnav.responsive a {
+  .topnav.responsive a:not(.icon) {
     display: block;
     text-align: left;
   }
