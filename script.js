@@ -26,7 +26,8 @@ if (mybutton) {
   };
 }
 
-// These stay outside as they're called directly from onclick attributes
+});
+
 function topFunction() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
