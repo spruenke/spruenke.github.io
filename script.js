@@ -15,7 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // Back to top button
-  var mybutton = document.getElementById("topBtn");
+var mybutton = document.getElementById("topBtn");
+if (mybutton) {
   window.onscroll = function() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       mybutton.style.display = "block";
@@ -23,8 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
       mybutton.style.display = "none";
     }
   };
-
-});
+}
 
 // These stay outside as they're called directly from onclick attributes
 function topFunction() {
