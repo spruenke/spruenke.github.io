@@ -605,6 +605,14 @@ a:hover {
     flex: unset;
   }
 
+  .leftcolumn_pub {
+    position: static;
+    height: auto;
+    max-height: none;
+    overflow-y: visible;
+    align-self: auto;
+  }
+
   .row {
     flex-direction: column;
   }
