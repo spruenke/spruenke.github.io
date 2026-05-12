@@ -2,8 +2,7 @@
 <html>
 <head>
 <!-- <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'> -->
-<script src="script.js">
-</script>
+
 <meta charset="UTF-8">
 <title> Current Teaching </title>
 <script src="https://kit.fontawesome.com/d8471ffc30.js" crossorigin="anonymous"></script>
@@ -172,21 +171,6 @@
 	</div>
 </div>
 </div>
-<script>
-	var coll = document.getElementsByClassName("collapsible");
-	var i;
-	
-	for (i = 0; i < coll.length; i++) {
-	  coll[i].addEventListener("click", function() {
-		this.classList.toggle("active");
-		var content = this.nextElementSibling;
-		if (content.style.maxHeight){
-		  content.style.maxHeight = null;
-		} else {
-		  content.style.maxHeight = content.scrollHeight + "2" + "px";
-		} 
-	  });
-	}
-	</script>
+	<script src="script.js"></script>
 </body>
 </html>
