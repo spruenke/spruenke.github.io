@@ -60,6 +60,66 @@
         and the necessity to control for liquidity constraints at alternative asset
         markets.
 
+- id: SURGERYFIRST
+  category: Clinical Works
+  year: 2026
+  title: Accuracy of Maxillary Positioning Using Patient-Specific Implants in a Surgery-First approach
+  journal: "Journal of Cranio-Maxillofacial Surgery,  2026"
+  doi: "https://doi.org/10.1016/j.jcms.2026.104648"
+  abstract:
+    - heading: Objective
+      text: >
+        This study aimed to evaluate the transfer accuracy of virtually planned maxillary repositioning within a Surgery First protocol using 3D-printed guides and patient-specific implants. In addition, the feasibility of a fully digital interdisciplinary workflow was analyzed.
+    - heading: Material & Methods
+      text: >
+        The patients in this study were treated with a completely virtually planned interdisciplinary treatment pathway according to the Surgery First concept using a 3D-printed maxillary guide and patient-specific implants as well as a 3D-printed final occlusion-splint. The osteosynthesis in the mandible was performed conventionally using miniplates. The postoperative cone beam computed tomography (CBCT) was overlaid with the planning data set and the transfer precision was analyzed with defined bony landmarks in the upper jaw using Onyx Ceph software (Image Instruments).
+    - heading: Results
+      text: >
+        63 patients were included in the analysis. The gender distribution was almost 2:1. Included were 41 female and 22 male patients. Mean age was 37.9 ± 10.1 years, and 12 patients presented with OSAS. Postoperative complications were rare and managed conservatively. The transfer accuracy of maxillary positioning was within ±1–2 mm at all landmarks, with only occasional minimal exceedance of the 3-mm threshold, indicating high clinical accuracy. Regional differences were observed, with slightly larger deviations at L4 and L5 and smaller deviations at L9–L11 (global p < 0.01); however, these did not compromise overall clinical precision.
+    - heading: Conclusion
+      text: >
+        Virtual surgical planning combined with patient-specific cutting guides and customized osteosynthesis plates enables clinically accurate maxillary positioning in Surgery First patients, with transfer deviations predominantly within the accepted 1–2 mm threshold. The fully digital interdisciplinary workflow allows predictable intraoperative transfer despite the absence of a presurgical occlusal reference and can be safely applied across different indications for bimaxillary surgery.
+
+- id: ANEURISM3Y
+  category: Clinical Works
+  year: 2026
+  title: Clinical Outcomes of Conservative, Endovascular and Micorsurgical Management of Unruptured Giant Intracranial Aneurysms: 3-Year Follow-Up of the Prospective, Multinational Giant Intracranial Aneurysm Registry
+  journal: "Journal of Neurology, Neurosurgery & Psychiatry, 2026"
+  doi: "https://doi.org/10.1136/jnnp-2026-338459"
+  abstract:
+    - heading: Background
+      text: >
+        Evidence regarding the clinical course of unruptured giant intracranial aneurysms (GIAs) after conservative management (CON), microsurgical treatment (SURG) or endovascular treatment (EVT) remains limited. We aimed to assess mortality, functional outcome, symptom course and retreatment rates after different management strategies.
+    - heading: Methods
+      text: >
+        In this prospective, multinational registry, patients with unruptured GIAs treated at 37 neurovascular centres between 2008 and 2018 were included. Outcomes after CON, EVT or SURG were analysed with standardised 3-year follow-up. The study is registered at ClinicalTrials.gov.
+    - heading: Results
+      text: >
+        We included 339 patients of whom 22.7% received CON, 42.8% EVT and 34.5% SURG. Three-year survival was 64.0% (95% CI 53.73% to 76.20%) in the CON group, 82.0% (95% CI 75.42% to 89.17%) in the EVT group and 93.5% (95% CI 88.91% to 98.28%) in the SURG group (p<0.001). Favourable neurological outcome (modified Rankin Scale 0–2) declined to 53.0%, 66.9% and 75.7% in the CON, EVT and SURG groups, respectively (p<0.01). Symptom improvement at 3 years occurred in 10.3% of CON, 22.1% of EVT and 11.1% of SURG patients, while deterioration was observed in 7.7%, 8.5% and 15.8%, respectively. Retreatment was required in 22.8% of EVT patients and 6.2% of SURG patients (p<0.01).
+    - heading: Conclusions
+      text: >
+        EVT and SURG were associated with significantly improved survival and functional outcomes compared with conservative management of unruptured GIAs. In patients eligible for intervention, both treatment modalities represent reasonable and effective options, with a high proportion of patients achieving favourable clinical outcomes.
+
+- id: MOYALONG
+  category: Clinical Works
+  year: 2026
+  title: Clinical Efficacy of Revascularization Surgery for Moyamoya Angiopathy: Long-Term Results of a European Cohort
+  journal: "European Journal of Neurology, 2026"
+  doi: "https://doi.org/10.1111/ene.70664"
+  abstract:
+    - heading: Background
+      text: > 
+        Moyamoya angiopathy (MMA) is a cerebrovascular disease treated by surgical revascularization. This study aimed to present long-term outcomes of European MMA patients after surgical revascularization.
+    - heading: Methods
+      text: >
+        MMA patients treated surgically between 1998 to 2023 were included. Follow-up comprised clinical and radiological examinations and electronic questionnaires. Patient data were analyzed retrospectively, and logistic regressions were performed to identify predictors of unfavorable outcomes.
+    - heading: Results
+      text: >
+        A total of 276 patients with 428 surgically treated hemispheres were included. The mean age was 35.0 ± 17.2 years, including 192 women and 84 men, predominantly of Caucasian ethnicity (88.0%). Ischemia (82.2%) and hemorrhage (10.1%) were the most common symptoms at onset. Most adults (80.9%) were treated with combined bypass surgery via mini-craniotomy. Within 30 days, complications occurred in 6.3% of surgeries, and the perioperative stroke risk was 2.6%. A total of 148 patients underwent in-house follow-up. No mRS scores ≥ 5 were observed, with 86.3% of patients achieving a score of 0–2, alongside a bypass patency rate of 95.7% and a stroke risk of 0.3% per patient-year. Preoperative stroke and silent ischemic MRI lesions were identified as predictors of an unfavorable outcome. Additionally, 201 patients were followed up electronically. No mRS scores ≥ 5 were observed, with 87.9% of patients achieving a score of 0–2. Moreover, 90.7% were independent in daily life, but only 50.5% returned to work or school.
+    - heading: Conclusions
+      text: >
+        Combined bypass surgery yielded favorable outcomes with low complication and stroke rates. Patients with preoperative stroke require closer follow-up, and individualized strategies are needed to address persistent functional impairments.
+
 - id: ORALAGE
   category: Clinical Works
   year: 2026
